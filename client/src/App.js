@@ -4,6 +4,7 @@ import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
 import ComplimentForm from './ComplimentCenter/ComplimentForm';
 import './App.css';
+import { Container, Form, ListGroup, FormGroup } from 'reactstrap';
 
 class App extends Component {
  constructor() {
@@ -131,22 +132,24 @@ loadCompliments = () => {
   render() {
 
     return (
-      <div className="container">
-        <div className="comments">
-          <h2>Compliments:</h2>
+      <Container>
+        <h2>Canary Compliments</h2>
+        <ListGroup>
           <ComplimentList 
           data={this.state.data}
           handleDeleteCompliment={this.onDeleteCompliment}
           handleUpdateCompliment={this.onUpdateCompliment} />
-        </div>
-        <div className="form">
+        </ListGroup>
+        <Form>
+          <FormGroup>
           <ComplimentForm  
           text={this.state.text}
           handleChangeText={this.onChangeText}
           submitCompliment={this.submitCompliment} />
-        </div>
+          </FormGroup>
+        </Form>
         {this.state.error && <p>{this.state.error}</p>}
-      </div>
+      </Container>
     );
   }
 } 

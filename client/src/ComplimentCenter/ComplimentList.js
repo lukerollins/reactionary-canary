@@ -2,10 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Compliment from './Compliment';
+import '../App.css';
 
 const ComplimentList = (props) => {
   const complimentNodes = props.data.map(compliment => (
-    <Compliment
+    <Compliment 
         children={compliment.string}  
         key={compliment._id} 
         id={compliment._id}

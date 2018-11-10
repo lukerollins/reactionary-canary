@@ -1,18 +1,22 @@
 // ComplimentForm.js
 import React from 'react';
 import PropTypes from 'prop-types';
+import {  Button, Form, Input, FormGroup } from 'reactstrap';
+import '../App.css';
 
 const ComplimentForm = props => (
-  <form onSubmit={props.submitCompliment}>
-    <input
-      type="text"
+  <Form className="justify-content-center" onSubmit={props.submitCompliment}>
+    <FormGroup>
+    <Input
+      type="textarea"
       name="text"
       placeholder="Your compliment..."
       value={props.text}
-      onChange={props.handleChangeText}
-    />
-    <button type="submit">Submit</button>
-  </form>
+      onChange={props.handleChangeText}/>
+    
+    <Button className="btn chirp button" type="submit">Submit</Button>
+    </FormGroup>
+  </Form>
 );
 
 ComplimentForm.propTypes = {

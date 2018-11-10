@@ -3,20 +3,22 @@ import React from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import { Button, ButtonGroup, ListGroupItem } from 'reactstrap';
+import '../App.css';
 
 const Compliment = props => (
-  <div className="singleComment">
-    <div className="textContent">
-      <div className="singleCommentContent">
+  <ListGroupItem>
+      <div>
         <ReactMarkdown source={props.children} />
       </div>
-      <div className="singleCommentButtons">
-      <span className="time">{moment(props.timestamp).fromNow()}</span>
-      <button onClick={() => { props.handleUpdateCompliment(props.id); }}>update</button>
-      <button onClick={() => { props.handleDeleteCompliment(props.id); }}>delete</button>
-      </div>
-    </div>
-  </div>
+
+      <span>{moment(props.timestamp).fromNow()}</span>
+
+      <ButtonGroup className="clearfix float-right">
+      <Button className="btn button" onClick={() => { props.handleUpdateCompliment(props.id); }}>update</Button>
+      <Button className="btn button" onClick={() => { props.handleDeleteCompliment(props.id); }}>delete</Button>
+      </ButtonGroup>
+  </ListGroupItem>
 );
 
 Compliment.propTypes = {
