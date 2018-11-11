@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
 import ComplimentForm from './ComplimentCenter/ComplimentForm';
+import { Container, ListGroup } from 'reactstrap';
 import './App.css';
-import { Container, Form, ListGroup, FormGroup } from 'reactstrap';
+import Canary_Painted_Web from './Canary_Painted_Web.png'
+
+
 
 class App extends Component {
  constructor() {
@@ -134,20 +137,22 @@ loadCompliments = () => {
     return (
       <Container>
         <h2>Canary Compliments</h2>
+        <div className="canary">
+        <img alt={"The complimenting canary."}  src={Canary_Painted_Web} />
+        </div>
         <ListGroup>
           <ComplimentList 
           data={this.state.data}
           handleDeleteCompliment={this.onDeleteCompliment}
           handleUpdateCompliment={this.onUpdateCompliment} />
         </ListGroup>
-        <Form>
-          <FormGroup>
+        
+          
           <ComplimentForm  
           text={this.state.text}
           handleChangeText={this.onChangeText}
           submitCompliment={this.submitCompliment} />
-          </FormGroup>
-        </Form>
+      
         {this.state.error && <p>{this.state.error}</p>}
       </Container>
     );

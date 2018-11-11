@@ -10,15 +10,22 @@ body {
   margin: 5px;
 }
 
-button.float-right {
-
-  margin: 5px;
+.btn-group {
+  margin-top: -35px;
 }
 
-.clearfix {
-  margin: 0;
-  float: right;
+.form-group {
+  margin-top: 20px;
 }
+
+.chirp {
+  margin-top: 15px;
+}
+
+.canary {
+  text-align: center;
+}
+
 
 h2 {
   text-align: center;
@@ -55,13 +62,11 @@ h2 {
 }
 
 img {
-  max-height: 100vh;
-}
+  
+  max-width: 40%;
+  }
 
 
-form {
-  padding-right: 30%;
-}
 
 
 /** Media queries to insure a positive experience for accessing on a multitude of devices **/
@@ -83,16 +88,7 @@ form {
   
 }
 
-@media (max-width: 800px) {
-  .list-group-item {
-      text-align: center;
-      
-  }
 
-  span {
-      align-content: center;
-  }
-}
 
 
 
