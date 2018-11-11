@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Canary Compliments",
+  "name": "Tell the canary your most interesting compliments.",
   "icons": [
     {
       "src": "favicon.ico",

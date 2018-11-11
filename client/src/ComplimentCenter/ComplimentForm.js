@@ -1,4 +1,5 @@
-// ComplimentForm.js
+// React, make me a tool that'll let us humans put our compliments into the database
+//for display later. 
 import React from 'react';
 import PropTypes from 'prop-types';
 import {  Button, Form, Input, FormGroup } from 'reactstrap';

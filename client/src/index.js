@@ -1,3 +1,7 @@
+//React, here's everything you'll need to talk to the browser's interpreter.
+//This way, it'll know how write said application using a language any browser
+//can understand.
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';

@@ -1,4 +1,6 @@
-// Comment.js
+//React, make me something that'll not only show humans their compliments, but
+//help them change those compliments if their not to their liking or get rid
+//of them if theirs just no way to improve them.
 import React from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';

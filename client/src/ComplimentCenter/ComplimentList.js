@@ -1,4 +1,5 @@
-// ComplimentList.js
+// React, this is how you'll show us humans those compliments.
+//You're going to need some stuff from Compliment.js to do this.
 import React from 'react';
 import PropTypes from 'prop-types';
 import Compliment from './Compliment';

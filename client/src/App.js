@@ -1,4 +1,7 @@
-// CommentBox.js
+//Okay React, here's how I want you to make this application. You already know
+//that you should only give the human those tools I told you to make when they need them,
+//if they need them at all. Don't worry, I've shown you where to get them, as well as everything
+//you need to build this application.
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
@@ -138,7 +141,7 @@ loadCompliments = () => {
       <Container>
         <h2>Canary Compliments</h2>
         <div className="canary">
-        <img alt={"The complimenting canary."}  src={Canary_Painted_Web} />
+        <img alt={"This canary wants to chirp about your most interesting compliments."}  src={Canary_Painted_Web} />
         </div>
         <ListGroup>
           <ComplimentList 
