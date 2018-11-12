@@ -16,7 +16,7 @@ const Compliment = props => (
 
       <span>{moment(props.timestamp).fromNow()}</span>
 
-      <ButtonGroup className="clearfix float-right">
+      <ButtonGroup>
       <Button className="btn button" onClick={() => { props.handleUpdateCompliment(props.id); }}>update</Button>
       <Button className="btn button" onClick={() => { props.handleDeleteCompliment(props.id); }}>delete</Button>
       </ButtonGroup>

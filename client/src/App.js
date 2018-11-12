@@ -29,7 +29,7 @@ class App extends Component {
 componentDidMount() {
 this.loadCompliments();
 if (!this.pollInterval) {
-  this.pollInterval = setInterval(this.loadCompliments, 20000);
+  this.pollInterval = setInterval(this.loadCompliments, 2000);
   }
 }
 
