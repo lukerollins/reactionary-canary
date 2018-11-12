@@ -15,4 +15,6 @@ In order to run this project:
 
 4. After starting Mongo Database, make sure you're in the main directory (REACTionary_Canary, as mentioned above), and run `yarn run start:dev`. A window for your default browser (or tab, if you're already running your default browser) should open displaying the project.
 
+**Heads up for those of you running Ubuntu 18.10:** If you get an error while running `yarn run start:dev` and get an `EPOSPC`
+error, running this code worked for me: `echo fs.inotify.max_user_watches=2048000 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`. For more info on this error go [here](https://github.com/facebook/jest/issues/3254).
      
