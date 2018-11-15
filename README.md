@@ -11,7 +11,7 @@ In order to run this project:
     2. Go into the `client` folder and do the same.
 
 
-3. Make sure you have Mongo Database (`mongod`) installed on your system. If you don't, download it on to your system the start `mongod` in whatever manner necessary for your operating system.
+3. Make sure you have Mongo Database (`mongod`) installed on your system. If you don't, download it on to your system then, start `mongod` in whatever manner necessary for your operating system.
 
 4. After starting Mongo Database, make sure you're in the main directory (REACTionary_Canary, as mentioned above), and run `yarn run start:dev`. A window for your default browser (or tab, if you're already running your default browser) should open displaying the project.
 
