@@ -1,0 +1,167 @@
+/*Here's how the app should look.*/
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: rgb(255, 251, 30);
+    font-size: 15pt;
+  }
+
+.container {
+  display: grid;
+  grid-auto-columns: minmax(15px, auto);
+  column-gap: 15px;
+  grid-template-rows: auto;
+  align-content: center;
+  
+}
+
+
+  
+button {
+    width: 99%;
+    height: 50px;  
+    /*margin: 1%;*/
+    /*padding-right: 8%;*/
+    text-align: center;
+    
+    
+    
+  }
+  
+  
+  /*.btn-group {
+      display: block;
+      flex-grow: 2;
+      justify-content: right;
+    
+  }*/
+
+  
+  
+  /*.form-group {
+    margin-top: 20px;
+  }*/
+
+  textarea {
+    padding: 3%;
+  }
+  
+  .chirp {
+    margin: 4% 0% 3% 0.5%;
+  }
+  
+  .canary {
+    text-align: center;
+  }
+  
+  
+  h2 {
+    
+    margin: 9px;
+    text-align: center;
+    font-size: 40pt;
+    
+  }
+
+  .expand {
+    width: 100%;
+    background: none;
+    border: none;
+    margin: 1% 3% 1% 0%;
+    background-color: rgb(255, 194, 10);
+    -webkit-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+  }
+  
+  
+ /* .list-group-item {
+    background: none;
+    background-color: rgb(255, 194, 10);
+    border: black 3px solid;
+    border-left: black 11px solid;
+    border-right: black 9px solid;
+    font-size: 70%;
+  /*compliment display area redesign color rgb(255, 194, 10) */
+  
+  
+  /*} */
+
+
+
+  .compliment-item {
+    background: none;
+    background-color: rgb(255, 194, 10);
+    /*border: black 3px solid;
+    border-left: black 11px solid;
+    border-right: black 9px solid;
+    font-size: 70%; */
+  
+    
+    margin: 5%;
+    padding: 5%;
+    -webkit-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+}
+  
+  .btn{
+    color: black;
+    font-size: 20pt;
+    background: none;
+    background-color: rgb(253, 222, 9);
+    border: 4px black solid;
+    border-radius: 0;
+  } /*redesigned button color: rgb(253, 222, 9) */
+  
+  
+  .btn:hover, .btn:focus, .btn:active {
+    background: none;
+    color:  rgb(253, 222, 9);
+    background-color: black;	
+  }
+  
+  .btn:active {
+    color:  rgb(253, 222, 9);
+    background: none;
+    background-color: black;
+    border-color: rgb(253, 222, 9);
+  }
+
+  .thing {
+    
+    margin: 4% 2%;
+    padding: 4% 2%;
+    -webkit-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+    box-shadow: -1px 0px 23px 0px rgba(0,0,0,0.7);
+  }
+
+  .texted {
+    margin: 4%;
+    padding: 1%;
+  }
+  .und {
+    margin-top: 2%;
+  }
+  
+  img {
+    
+    max-width: 40%;
+    }
+
+    /*@media (min-width: 800px) {
+
+      button {
+
+      display: flex;
+      flex-grow: 2;
+      justify-content: right;
+
+      }
+
+      img { 
+        max-width: 70% 
+      }
+    }
+  */

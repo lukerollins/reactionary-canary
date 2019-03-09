@@ -15,7 +15,7 @@ const router = express.Router();
 const API_PORT = process.env.API_PORT || 3001;
 
 //Here's where to find the info.
-mongoose.connect("mongodb://localhost:27017/canary_compliments)", { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/canary_compliments)', { useNewUrlParser: true })
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 

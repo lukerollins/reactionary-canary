@@ -1,11 +1,12 @@
 /*Here's how the app should look.*/
+
 body {
   font-family: 'Special Elite', cursive;
   background-color: rgb(255, 215, 55);
-  font-size: 1.5em;
+  font-size: 40pt;
 }
 
-.button {
+button {
 
   margin: 5px;
 }
@@ -43,6 +44,7 @@ h2 {
   border-left: black 11px solid;
   border-right: black 9px solid;
   font-size: 70%;
+/*compliment display area redesign color rgb(255, 194, 10) */
 
 
 }
@@ -52,7 +54,7 @@ h2 {
   background: none;
   border: 4px black solid;
   border-radius: 0;
-}
+} /*redesigned button color: rgb(253, 222, 9) */
 
 
 .btn:hover, .btn:focus, .btn:active {
@@ -73,6 +75,8 @@ img {
 
 
 /** Media queries to insure a positive experience for accessing on a multitude of devices **/
+
+
 
 @media (min-width: 418px) {
   h2 {

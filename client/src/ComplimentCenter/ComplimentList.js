@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Compliment from './Compliment';
-import '../App.css';
+import '../Redesigned_App.css';
 
 const ComplimentList = (props) => {
   const complimentNodes = props.data.map(compliment => (

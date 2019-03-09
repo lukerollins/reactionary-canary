@@ -6,8 +6,7 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
 import ComplimentForm from './ComplimentCenter/ComplimentForm';
-import { Container, ListGroup } from 'reactstrap';
-import './App.css';
+import './Redesigned_App.css';
 import Canary_Painted_Web from './Canary_Painted_Web.png'
 
 
@@ -138,17 +137,17 @@ loadCompliments = () => {
   render() {
 
     return (
-      <Container>
+      <div className="container">
         <h2>Canary Compliments</h2>
         <div className="canary">
         <img alt={"This canary wants to chirp about your most interesting compliments."}  src={Canary_Painted_Web} />
         </div>
-        <ListGroup>
+        <div>
           <ComplimentList 
           data={this.state.data}
           handleDeleteCompliment={this.onDeleteCompliment}
           handleUpdateCompliment={this.onUpdateCompliment} />
-        </ListGroup>
+        </div>
         
           
           <ComplimentForm  
@@ -157,7 +156,7 @@ loadCompliments = () => {
           submitCompliment={this.submitCompliment} />
       
         {this.state.error && <p>{this.state.error}</p>}
-      </Container>
+      </div>
     );
   }
 } 
