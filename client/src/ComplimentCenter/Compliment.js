@@ -18,7 +18,7 @@ const Compliment = props => (
       <span>{moment(props.timestamp).fromNow()}</span>
     </div>
   </div>
-      <div>
+      <div className="group">
         <button className="btn und" onClick={() => { props.handleUpdateCompliment(props.id); }}>Edit</button>
         <button className="btn und" onClick={() => { props.handleDeleteCompliment(props.id); }}>Delete</button>
       </div>

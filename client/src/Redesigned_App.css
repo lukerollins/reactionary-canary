@@ -165,3 +165,31 @@ button {
       }
     }
   */
+
+  @media (min-width: 752px) {
+    .group {
+      
+      display: flex;
+    }
+
+    /*button {
+      
+      
+    }
+    */
+    button.und {
+      margin: 1%;
+      height: 5%;
+    }
+    
+    button.chirp {
+      width: 30%;
+      height: 40%;
+      font-size: 25pt;
+      text-align: center;
+    }
+
+    .form-group {
+      text-align: center;
+    }
+  }
