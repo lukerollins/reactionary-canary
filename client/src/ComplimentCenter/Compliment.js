@@ -15,7 +15,7 @@ const Compliment = props => (
         <ReactMarkdown source={props.children} />
       </div>
 
-      <span>{moment(props.timestamp).fromNow()}</span>
+      <span className="time">{moment(props.timestamp).fromNow()}</span>
     </div>
   </div>
       <div className="group">
