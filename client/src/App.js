@@ -7,7 +7,7 @@ import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
 import ComplimentForm from './ComplimentCenter/ComplimentForm';
 import { Container, ListGroup } from 'reactstrap';
-import './App.css';
+import './Redesigned_App.css';
 import Canary_Painted_Web from './Canary_Painted_Web.png'
 
 
