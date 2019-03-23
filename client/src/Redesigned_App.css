@@ -6,20 +6,9 @@
     font-size: 14pt;
   }
 
-  /*.container {
-  display: grid;
-  grid-auto-columns: minmax(15px, auto);
-  column-gap: 15px;
-  grid-template-rows: auto;
-  align-content: center;
-  
-}*/
-
   button {
     width: 99%;
     height: 50px;  
-    /*margin: 1%;*/
-    /*padding-right: 8%;*/
     text-align: center;  
   }
 
@@ -27,6 +16,10 @@
     margin-top: 5%;
     display: block;
     width: 100%;
+  }
+
+  .und  {
+    margin-top: 3%;
   }
 
   textarea {
@@ -40,28 +33,25 @@
   .canary {
     text-align: center;
   }
-  
-  
+
   h2 {
-    
     margin: 5% 2% 2% 2%;
     text-align: center;
     font-size: 40pt;
-    
   }
 
   .expand {
-    /*width: 100%;*/
     background: none;
     border: none;
-    margin: 1% 3% 1% 0%;
+    font-size: inherit;
+    border-radius: 0;
+    margin: 6% 0;
+    align-self: center;
     background-color: rgb(252, 213, 17);
     -webkit-box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
     -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
     box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
   }
-
-
 
   .list-group-item {
     background: none;
@@ -72,7 +62,7 @@
     -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
     box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
 }
-  
+
   .btn{
     color: black;
     font-size: 20pt;
@@ -80,7 +70,7 @@
     background-color: rgb(244, 216, 9);
     border: 4px black solid;
     border-radius: 0;
-  } /*redesigned button color: rgb(253, 222, 9) */
+  } 
   
   
   .btn:hover, .btn:focus, .btn:active {
@@ -98,7 +88,7 @@
 
   .thing {
     background-color: rgb(247, 180, 13);
-    margin: 2% 1%;
+    margin: 1%;
     padding: 2% 1%;
     -webkit-box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
     -moz-box-shadow: -1px 0px 23px 0px rgba(0,0,0,1);
@@ -109,10 +99,13 @@
     margin: 2%;
     padding: 1%;
   }
- 
+
+  .time {
+    margin: 2%;
+    padding: 1%;
+  }
   
   img {
-    
     max-width: 40%;
     }
 
@@ -125,19 +118,13 @@
   }
 
   @media (min-width: 560px) {
-    /*.container {
-      display: grid;
-      grid-auto-columns: minmax(64px, auto);
-      column-gap: 30px;
-      grid-template-rows: auto;
-     /* align-content: space-between; */
-      
-    /*}*/
+    body {
+      font-size: 17pt;
+    }
     .group {
-      margin: 1% 0;
+      margin-top: 1%;
       display: flex;
-      align-self: center;
-      
+      align-content: stretch; 
     }
 
     h2 {
@@ -145,16 +132,15 @@
     }
 
     button.und {
-      margin: 3.85%;
+      margin: 3%;
       height: 79px;
-      width: 50%;
       padding: 1%;
       font-size: 25pt;
       text-align: center;
     }
     
     .chirp {
-      width: 170px;
+      width: 185px;
       height: 79px;
       padding: 1.5%;
       margin: 3%;
@@ -171,46 +157,23 @@
       padding: 2%;
     }
 
-    /*.thing {
-    margin: 2% 1%;
-    padding: 2% 1%;
-    }*/
-
     .btn {
-      border: 5px black solid;
+      border: 6px black solid;
     }
   }
 
-  @media (min-width: 640px) {
-    /*.container {
-    display: grid;
-    grid-auto-columns: minmax(80px, auto);
-    grid-template-rows: auto;
-    }*/
-   
-  }
-
   @media (min-width: 739px) {
-    /*.container {
-      grid-auto-columns: minmax(96px, auto);
-    }*/
     .chirp {
-      width: 170px;
+      width: 200px;
       height: 79px;
-      padding: 1%;
-      margin: 3%;
+      margin: 0;
       font-size: 30pt;
     }
 
     button.group {
       margin: 0.9%;
-      height: 79px;
       padding: 1%;
       font-size: 25pt
-    }
-
-    .btn {
-      border: 6px black solid;
     }
 
     h2 {
@@ -218,9 +181,3 @@
       
     }
   } 
-
-  @media (min-width: 993px) {
-    .chirp {
-      width: 170px;
-    }
-  }

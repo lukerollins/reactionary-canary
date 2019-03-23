@@ -2,7 +2,7 @@
 //for display later. 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  Button, Form, Input, FormGroup } from 'reactstrap';
+import {  Button, Form, Input, FormGroup, Row, Col } from 'reactstrap';
 import '../Redesigned_App.css';
 
 const ComplimentForm = props => (
@@ -15,8 +15,11 @@ const ComplimentForm = props => (
       placeholder="Your compliment..."
       value={props.text}
       onChange={props.handleChangeText}/>
-    
-    <Button className="btn chirp button" type="submit">Chirp!</Button>
+    <Row>
+      <Col lg="1">
+        <Button className="btn chirp button" type="submit">Chirp!</Button>
+      </Col>
+    </Row>
     </FormGroup>
   </Form>
 );

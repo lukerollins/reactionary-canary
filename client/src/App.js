@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import ComplimentList from './ComplimentCenter/ComplimentList';
 import ComplimentForm from './ComplimentCenter/ComplimentForm';
-import { Container, ListGroup } from 'reactstrap';
+import { Container, ListGroup, Row, Col } from 'reactstrap';
 import './Redesigned_App.css';
 import Canary_Painted_Web from './Canary_Painted_Web.png'
 
@@ -139,22 +139,35 @@ loadCompliments = () => {
 
     return (
       <Container>
-        <h2>Canary Compliments</h2>
-        <div className="canary">
-        <img alt={"This canary wants to chirp about your most interesting compliments."}  src={Canary_Painted_Web} />
-        </div>
-        <ListGroup>
-          <ComplimentList 
-          data={this.state.data}
-          handleDeleteCompliment={this.onDeleteCompliment}
-          handleUpdateCompliment={this.onUpdateCompliment} />
-        </ListGroup>
-        
+        <Row>
+          <Col><h2>Canary Compliments</h2></Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className="canary">
+            <img alt={"This canary wants to chirp about your most interesting compliments."}  src={Canary_Painted_Web} />
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <ListGroup>
+            <ComplimentList 
+            data={this.state.data}
+            handleDeleteCompliment={this.onDeleteCompliment}
+            handleUpdateCompliment={this.onUpdateCompliment} />
+          </ListGroup>
+          </Col>
+        </Row>
           
-          <ComplimentForm  
-          text={this.state.text}
-          handleChangeText={this.onChangeText}
-          submitCompliment={this.submitCompliment} />
+          <Row>
+          <Col>
+            <ComplimentForm  
+            text={this.state.text}
+            handleChangeText={this.onChangeText}
+            submitCompliment={this.submitCompliment} />
+          </Col>
+          </Row>
       
         {this.state.error && <p>{this.state.error}</p>}
       </Container>
