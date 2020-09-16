@@ -12,6 +12,7 @@
     "lodash": "^4.17.20",
     "minimist": "^1.2.2",
     "moment": "^2.22.2",
+    "node-forge": "^0.10.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
