@@ -16,7 +16,7 @@
     "express": "^4.16.4",
     "glob-parent": "^6.0.0",
     "http-proxy": "^1.18.1",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "kind-of": "^6.0.3",
     "merge-deep": "^3.0.3",
     "mini-css-extract-plugin": "^1.2.0",
