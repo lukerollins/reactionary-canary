@@ -20,7 +20,7 @@
     "kind-of": "^6.0.3",
     "merge-deep": "^3.0.3",
     "mini-css-extract-plugin": "^2.5.3",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.6",
     "mongoose": "^6.1.8",
     "morgan": "^1.9.1",
     "node-forge": "^1.0.0",
